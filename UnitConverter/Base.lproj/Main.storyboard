@@ -26,6 +26,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjZ-jD-pPi">
                                 <rect key="frame" x="181.5" y="399" width="51" height="30"/>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iz5-P4-fU9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Update for the Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-TS-9Ut">
                                 <rect key="frame" x="100" y="437.5" width="214" height="21"/>
@@ -59,6 +62,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="BYF-ht-ZVb" id="yuh-Fe-24x"/>
+                        <outlet property="outputField" destination="YzP-TS-9Ut" id="oem-G0-UnK"/>
+                        <outlet property="segmentController" destination="PW6-94-G6q" id="57U-EQ-wF7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
